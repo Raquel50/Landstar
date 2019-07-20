@@ -24,7 +24,7 @@ var cursors;
 var game = new Phaser.Game(config);
 
   function preload() {
-  this.load.image('sky', 'assets/sky.png');
+  this.load.image('sky', 'assets/espacio2.jpg');
   this.load.image('ground', 'assets/platform.png');
   this.load.image('star', 'assets/star.png');
   this.load.image('bomb', 'assets/bomb.png');
@@ -36,7 +36,7 @@ var game = new Phaser.Game(config);
 }
 
   function create() {
-  this.add.image(400, 300, 'sky');
+  this.add.image(400, 270, 'sky');
 
   setPlatforms(this);
 
