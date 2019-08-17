@@ -65,8 +65,8 @@ var game = new Phaser.Game(config);
       setXY: { x: 3, y: 2, stepX: 30, stepY: 40 }
     });
 
-    stars.children.iterate(function (child) {
-      child.setBounceY(Phaser.Math.FloatBetween(0.2, 0.8))
+    bombs.children.iterate(function (child) {
+      child.setBounceY(Phaser.Math.FloatBetween(-0.4, 0.8))
     });
 
     this.physics.add.collider(player, platforms);
@@ -93,7 +93,6 @@ function update() {
 
   if (cursors.up.isDown && player.body.touching.down) {
     player.setVelocityY(-330);
-
   }
 }
 
