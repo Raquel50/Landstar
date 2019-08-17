@@ -1,6 +1,6 @@
 const config = {
   type: Phaser.AUTO,
-  width: 800,
+  width: 880,
   height: 600,
   physics: {
       default: 'arcade',
@@ -99,6 +99,7 @@ function update() {
 function setPlatforms(self) {
   platforms = self.physics.add.staticGroup();
 
+//complete la barra de base para que complete el canvas 
   platforms.create(400, 568, 'ground').setScale(2).refreshBody();
 
   platforms.create(600, 400, 'ground');
