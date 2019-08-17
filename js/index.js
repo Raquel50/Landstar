@@ -1,18 +1,18 @@
-var config = {
+const config = {
   type: Phaser.AUTO,
   width: 800,
   height: 600,
   physics: {
-    default: 'arcade',
-    arcade: {
+      default: 'arcade',
+      arcade: {
       gravity: { y: 300 },
       debug: false
-    }
+      }
   },
   scene: {
-    preload: preload,
-    create: create,
-    update: update
+      preload: preload,
+      create: create,
+      update: update
   }
 };
 
@@ -65,8 +65,8 @@ var game = new Phaser.Game(config);
       setXY: { x: 3, y: 2, stepX: 30, stepY: 40 }
     });
 
-    stars.children.iterate(function (child) {
-      child.setBounceY(Phaser.Math.FloatBetween(0.4, 0.8))
+    bombs.children.iterate(function (child) {
+      child.setBounceY(Phaser.Math.FloatBetween(-0.4, 0.8))
     });
 
     this.physics.add.collider(player, platforms);
@@ -93,7 +93,6 @@ function update() {
 
   if (cursors.up.isDown && player.body.touching.down) {
     player.setVelocityY(-330);
-
   }
 }
 
