@@ -56,13 +56,17 @@ var game = new Phaser.Game(config);
     });
 
     stars.children.iterate(function (child) {
-      child.setBounceY(Phaser.Math.FloatBetween(0.4, 0.8))
+      child.setBounceY(Phaser.Math.FloatBetween(-0.4, 0.8))
     });
 
     bombs = this.physics.add.group({
-      key: 'bombs',
+      key: 'bomb',
       repeat: 11,
       setXY: { x: 3, y: 2, stepX: 30, stepY: 40 }
+    });
+
+    stars.children.iterate(function (child) {
+      child.setBounceY(Phaser.Math.FloatBetween(0.2, 0.8))
     });
 
     this.physics.add.collider(player, platforms);
