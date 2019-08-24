@@ -62,7 +62,7 @@ var game = new Phaser.Game(config);
     bombs = this.physics.add.group({
       key: 'bomb',
       repeat: 11,
-      setXY: { x: 3, y: 2, stepX: 30, stepY: 40 }
+      setXY: { x: 3, y: 2, stepX: 45, stepY: 40 }
     });
 
     bombs.children.iterate(function (child) {
@@ -99,7 +99,7 @@ function update() {
 function setPlatforms(self) {
   platforms = self.physics.add.staticGroup();
 
-//complete la barra de base para que complete el canvas 
+//complete la barra de base para que complete el canvas
   platforms.create(400, 568, 'ground').setScale(2).refreshBody();
 
   platforms.create(600, 400, 'ground');
@@ -116,6 +116,7 @@ function createPlayer(self){
 
 //Todo lo que se hará en esta función es detener el juego y pintar al personaje en rojo
 function hitBomb (player, bomb)
+
 {
     // self.physics.pause();
 
@@ -164,13 +165,13 @@ function collectStar (player, star)
             child.enableBody(true, child.x, 0, true, true);
 
         });
-//colision de las bombas
-        // var x = (player.x < 400) ? Phaser.Math.Between(400, 800) : Phaser.Math.Between(0, 400);
-
-        // var bomb = bombs.create(x, 16, 'bomb');
-        // bomb.setBounce(1);
-        // bomb.setCollideWorldBounds(true);
-        // bomb.setVelocity(Phaser.Math.Between(-200, 200), 20);
+// colision de las bombas
+//         var x = (player.x < 400) ? Phaser.Math.Between(400, 800) : Phaser.Math.Between(0, 400);
+//
+//         var bomb = bombs.create(x, 16, 'bomb');
+//         bomb.setBounce(1);
+//         bomb.setCollideWorldBounds(true);
+//         bomb.setVelocity(Phaser.Math.Between(-200, 200), 20);
 
     }
 }
