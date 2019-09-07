@@ -1,9 +1,19 @@
 const config = {
-    type: Phaser.AUTO,
-    parent: 'container',
-    width: 800,
-    height: 600,
-    scene: [MainMenu,]
+  dom: {
+    createContainer: true
+  },
+  height: 600,
+  parent: 'container',
+  physics: {
+    default: 'arcade',
+    arcade: {
+      gravity: { y: 300 },
+      debug: false
+    }
+  },
+  scene: [MainMenu, Bomber],
+  type: Phaser.AUTO,
+  width: 800
 };
 
- new Phaser.Game(config);
+new Phaser.Game(config);
