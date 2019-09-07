@@ -3,9 +3,11 @@ html, body {
   padding: 0;
 }
 
-body {
-  width: 100%;
-}
+/* body {
+
+  background: #d63031;
+} */
+
 
 #container {
   margin: 0 auto;

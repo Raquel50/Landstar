@@ -3,7 +3,7 @@ const config = {
     parent: 'container',
     width: 800,
     height: 600,
-    scene: [MainMenu, Bomber]
+    scene: [MainMenu,]
 };
 
-new Phaser.Game(config);
+ new Phaser.Game(config);
