@@ -121,9 +121,9 @@ class Bomber extends Phaser.Scene {
 
   //Todo lo que se hará en esta función es detener el juego y pintar al personaje en rojo
   hitBomb (player, bomb) {
-    // self.physics.pause();
+    self.physics.pause();
 
-    player.setTint(0xff0000);//
+    player.setTint(0xff0000);
 
     player.anims.play('turn');
 
@@ -135,7 +135,7 @@ class Bomber extends Phaser.Scene {
 
     //concatenacion de del score con los puntos sumados
     this.score += 10;
-    this.scoreText.setText('Score: ' + score);
+    this.scoreText.setText('score: ' + score);
   }
 
 }

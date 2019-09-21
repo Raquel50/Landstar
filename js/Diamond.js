@@ -1,6 +1,6 @@
-class Bomber extends Phaser.Scene {
+class Diamond extends Phaser.Scene {
   constructor() {
-    super({ key: 'bomber' });
+    super({ key: 'diamond' });
 
     this.player;
     this.stars;
