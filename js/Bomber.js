@@ -44,12 +44,15 @@ class Bomber extends Phaser.Scene {
 
     this.bombs = this.physics.add.group({
       key: 'bomb',
-      repeat: 11,
-      setXY: { x: 3, y: 2, stepX: 45, stepY: 40 }
+      repeat: 3,
+      setXY: { x: 1, y: 2, stepX: 100, stepY: 200 }
     });
 
     this.bombs.children.iterate(function (child) {
-      child.setBounceY(Phaser.Math.FloatBetween(-0.4, 0.8))
+      child.body.velocity.setTo(200, 200);
+      child.body.collideWorldBounds = true;
+      child.body.bounce.set(1);
+      child.body.gravity.set(0, 180);
     });
 
     this.physics.add.collider(this.player, this.platforms);
