@@ -60,6 +60,15 @@ class Bomber extends Phaser.Scene {
 
     //coordenadas donde se verá el texto. 'score: 0' es la cadena predeterminada a mostrar
     this.scoreText = this.add.text(16, 16, 'score: 0', { fontSize: '32px', fill: '#000' });
+
+    // // Add play button
+    // this.load.image('play-button', 'assets/button.png');
+    // const h1 = this.add.dom(400, 300, 'h1', null, 'gameOver');
+    // h1.setClassName('gameOver');
+    //
+    // // const playButton = this.add.image(400, 300, 'play-button');
+    // h1.setInteractive();
+    // h1.once('pointerup', () => this.scene.start('diamond'), this);
   }
 
   update() {
@@ -121,21 +130,23 @@ class Bomber extends Phaser.Scene {
 
   //Todo lo que se hará en esta función es detener el juego y pintar al personaje en rojo
   hitBomb (player, bomb) {
-    self.physics.pause();
+
+    this.physics.pause();
 
     player.setTint(0xff0000);
 
     player.anims.play('turn');
 
+    this.scene.start('gameover')
+
     // gameOver = true;
   }
 
   collectStar (player, star) {
-    star.disableBody(true, true);
+   star.disableBody(true, true);
 
     //concatenacion de del score con los puntos sumados
     this.score += 10;
-    this.scoreText.setText('score: ' + score);
+    this.scoreText.setText('Score: ' + this.score);
   }
-
 }
