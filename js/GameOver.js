@@ -10,7 +10,7 @@ class GameOver extends Phaser.Scene {
 
   create() {
     // Set background color
-    this.cameras.main.setBackgroundColor('#27ae60');
+    this.cameras.main.setBackgroundColor('#30336b');
 
     // Add play button
     this.load.image('GameOver-button', 'assets/button.png');

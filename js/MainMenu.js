@@ -11,7 +11,7 @@ class MainMenu extends Phaser.Scene {
 
   create() {
     // Set background color
-    this.cameras.main.setBackgroundColor('#e67e22');
+    this.cameras.main.setBackgroundColor('#30336b');
 
     // Add play button
     this.load.image('play-button', 'assets/button.png');
