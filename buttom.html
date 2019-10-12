@@ -5,22 +5,22 @@
     <style type="text/css">
 
 .bubbly-button{
-font-family: 'Helvetica', 'Arial', sans-serif;
-display: inline-block;
-font-size: 1em;
-padding: 1em 2em;
-margin-top: 100px;
-margin-bottom: 60px;
--webkit-appearance: none;
-appearance: none;
-background-color: #ff0081;
-color: #fff;
-border-radius: 4px;
-border: none;
-cursor: pointer;
-position: relative;
-transition: transform ease-in 0.1s, box-shadow ease-in 0.25s;
-box-shadow: 0 2px 25px rgba(255, 0, 130, 0.5);
+  appearance: none;
+  background-color: #ff0081;
+  border: none;
+  border-radius: 4px;
+  box-shadow: 0 2px 25px rgba(255, 0, 130, 0.5);
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: 'Helvetica', 'Arial', sans-serif;
+  font-size: 1em;
+  margin-bottom: 60px;
+  margin-top: 100px;
+  padding: 1em 2em;
+  position: relative;
+  transition: transform ease-in 0.1s, box-shadow ease-in 0.25s;
+  -webkit-appearance: none;
 }
 
 .bubbly-button:focus {
@@ -28,15 +28,15 @@ box-shadow: 0 2px 25px rgba(255, 0, 130, 0.5);
 }
 
 .bubbly-button:before, .bubbly-button:after{
-  position: absolute;
+  background-repeat: no-repeat;
   content: '';
   display: block;
-  width: 140%;
   height: 100%;
   left: -20%;
-  z-index: -1000;
+  position: absolute;
   transition: all ease-in-out 0.5s;
-  background-repeat: no-repeat;
+  width: 140%;
+  z-index: -1000;
 }
 
 .bubbly-button:before{

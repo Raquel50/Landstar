@@ -5,22 +5,20 @@ class GameOver extends Phaser.Scene {
 
   preload () {
     this.load.css('landstar', 'assets/css/landstar.css');
-    this.load.image('GameOver-button', 'assets/button.png');
+    // this.load.image('GameOver-button', 'assets/button.png');
   }
 
   create() {
+    const self = this;
+
     // Set background color
-    this.cameras.main.setBackgroundColor('#30336b');
+    this.cameras.main.setBackgroundColor('#009432');
 
-    // Add play button
-    this.load.image('GameOver-button', 'assets/button.png');
-    const h1 = this.add.dom(400, 300, 'h1', null, 'gameover');
-    h1.setClassName('gameover');
-
-    // const playButton = this.add.image(400, 300, 'play-button');
-    h1.setInteractive();
-    h1.once('pointerup', () => this.scene.start('bomber'), this);
-    // this.load.image('play-button', 'assets/button.png');
-
+    const gameOverButton = document.createElement('input');
+    gameOverButton.className = 'boton-personalizado-4';
+    gameOverButton.type = 'button';
+    gameOverButton.value = 'GAME OVER';
+    gameOverButton.onclick = () => self.scene.start('bomber');
+    this.add.dom(400, 300, gameOverButton).setInteractive();
   }
-  }
+}
