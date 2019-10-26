@@ -12,6 +12,11 @@ class MainMenu extends Phaser.Scene {
   create() {
     const self = this;
 
+    this.cameras.main.setBackgroundColor('#009432');
+
+    const h1 = this.add.dom(400, 200, 'h1', null, 'LANDSTAR');
+    h1.setClassName('landstar');
+
     // Set background color
     this.cameras.main.setBackgroundColor('#30336b');
 

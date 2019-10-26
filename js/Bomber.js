@@ -44,7 +44,7 @@ class Bomber extends Phaser.Scene {
 
     this.bombs = this.physics.add.group({
       key: 'bomb',
-      repeat: 3,
+      repeat: 10,
       setXY: { x: 1, y: 2, stepX: 100, stepY: 200 }
     });
 

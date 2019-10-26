@@ -3,5 +3,7 @@
 }
 
 .gameover {
-  color: red;
-}
+      font-family: 'Helvetica', 'Arial', sans-serif;
+      font-size: 2em;
+      color: #2d3436;
+    }
