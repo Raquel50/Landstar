@@ -20,5 +20,17 @@ class GameOver extends Phaser.Scene {
     gameOverButton.value = 'GAME OVER';
     gameOverButton.onclick = () => self.scene.start('bomber');
     this.add.dom(400, 300, gameOverButton).setInteractive();
+
+
+    // Set background color
+    this.cameras.main.setBackgroundColor('#009432');
+
+    const tryAgainButton = document.createElement('input');
+    gameOverButton.className = 'boton-personalizado-5';
+    tryAgainButton.type = 'button';
+    tryAgainButton.value = 'INTENTAR DE NUEVO';
+    tryAgainButton.onclick = () => self.scene.start('bomber');
+    this.add.dom(500, 250, tryAgainButton).setInteractive();
+
   }
 }

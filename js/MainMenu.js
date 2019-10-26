@@ -6,6 +6,7 @@ class MainMenu extends Phaser.Scene {
   preload () {
     this.load.css('landstar', 'assets/css/button.css');
     // this.load.image('play-button', 'assets/button.png');
+
   }
 
   create() {
