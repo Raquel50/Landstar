@@ -6,6 +6,7 @@ class MainMenu extends Phaser.Scene {
   preload () {
     this.load.css('landstar', 'assets/css/button.css');
     // this.load.image('play-button', 'assets/button.png');
+    this.load.css('animated-shadow', 'assets/css/button.css');
 
   }
 
@@ -14,11 +15,9 @@ class MainMenu extends Phaser.Scene {
 
     this.cameras.main.setBackgroundColor('#009432');
 
-
     const h1 = this.add.dom(400, 200, 'h1', null, 'LANDSTAR');
-    h1.setClassName('landstar', 'animated-shadow');
-
-
+    h1.setClassName('landstar');
+    h1.setClassName('animated-shadow');
 
     // Set background color
     this.cameras.main.setBackgroundColor('#30336b');

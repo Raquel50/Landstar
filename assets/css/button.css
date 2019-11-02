@@ -126,156 +126,155 @@
     font-family: 'Helvetica', 'Arial', sans-serif;
     font-size: 48px;
     color: #fff;
-
   }
+
 
   .animated-shadow {
+
     color: #ffffff;
 
-  font: normal 140px Varela Round, sans-serif;
+    font: normal 140px Varela Round, sans-serif;
 
-  height: 140px;
+    height: 140px;
 
-  left: 0;
+    left: 0;
 
-  letter-spacing: 5px;
+    letter-spacing: 5px;
 
-  text-align: center;
+    text-align: center;
 
-  text-transform: uppercase;
+    text-transform: uppercase;
 
-  width: 100%;
+    width: 100%;
 
-  animation: move linear 2000ms infinite;
+    animation: move linear 2000ms infinite;
 
-  z-index: 2
-
-}
-
-/*Animación para rotar las sombras*/
-
-@keyframes move {
-
-  0% {
-
-    text-shadow:
-
-      4px -4px 0 #da0641,
-
-      3px -3px 0 #da0641,
-
-      2px -2px 0 #da0641,
-
-      1px -1px 0 #da0641,
-
-      -4px 4px 0 #13f1fc,
-
-      -3px 3px 0 #13f1fc,
-
-      -2px 2px 0 #13f1fc,
-
-      -1px 1px 0 #13f1fc
-
-    ;
+    z-index: 6
 
   }
 
-  25% {
+  /*Animación para rotar las sombras*/
 
-    text-shadow:
+  @keyframes move {
 
-      -4px -4px 0 #13f1fc,
+    0% {
 
-      -3px -3px 0 #13f1fc,
+      text-shadow:
 
-      -2px -2px 0 #13f1fc,
+        4px -4px 0 #da0641,
 
-      -1px -1px 0 #13f1fc,
+        3px -3px 0 #da0641,
 
-      4px 4px 0 #da0641,
+        2px -2px 0 #da0641,
 
-      3px 3px 0 #da0641,
+        1px -1px 0 #da0641,
 
-      2px 2px 0 #da0641,
+        -4px 4px 0 #13f1fc,
 
-      1px 1px 0 #da0641
+        -3px 3px 0 #13f1fc,
 
-    ;
+        -2px 2px 0 #13f1fc,
 
-  }
+        -1px 1px 0 #13f1fc
 
-  50% {
+      ;
 
-    text-shadow:
+    }
 
-      -4px 4px 0 #da0641,
+    25% {
 
-      -3px 3px 0 #da0641,
+      text-shadow:
 
-      -2px 2px 0 #da0641,
+        -4px -4px 0 #13f1fc,
 
-      -1px 1px 0 #da0641,
+        -3px -3px 0 #13f1fc,
 
-      4px -4px 0 #13f1fc,
+        -2px -2px 0 #13f1fc,
 
-      3px -3px 0 #13f1fc,
+        -1px -1px 0 #13f1fc,
 
-      2px -2px 0 #13f1fc,
+        4px 4px 0 #da0641,
 
-      1px -1px 0 #13f1fc
+        3px 3px 0 #da0641,
 
-    ;
+        2px 2px 0 #da0641,
 
-  }
+        1px 1px 0 #da0641
 
-  75% {
+      ;
 
-    text-shadow:
+    }
 
-      4px 4px 0 #13f1fc,
+    50% {
 
-      3px 3px 0 #13f1fc,
+      text-shadow:
 
-      2px 2px 0 #13f1fc,
+        -4px 4px 0 #da0641,
 
-      1px 1px 0 #13f1fc,
+        -3px 3px 0 #da0641,
 
-      -4px -4px 0 #da0641,
+        -2px 2px 0 #da0641,
 
-      -3px -3px 0 #da0641,
+        -1px 1px 0 #da0641,
 
-      -2px -2px 0 #da0641,
+        4px -4px 0 #13f1fc,
 
-      -1px -1px 0 #da0641
+        3px -3px 0 #13f1fc,
 
-    ;
+        2px -2px 0 #13f1fc,
 
-  }
+        1px -1px 0 #13f1fc
 
-  100% {
+      ;
 
-    text-shadow:
+    }
 
-      4px -4px 0 #da0641,
+    75% {
 
-      3px -3px 0 #da0641,
+      text-shadow:
 
-      2px -2px 0 #da0641,
+        4px 4px 0 #13f1fc,
 
-      1px -1px 0 #da0641,
+        3px 3px 0 #13f1fc,
 
-      -4px 4px 0 #13f1fc,
+        2px 2px 0 #13f1fc,
 
-      -3px 3px 0 #13f1fc,
+        1px 1px 0 #13f1fc,
 
-      -2px 2px 0 #13f1fc,
+        -4px -4px 0 #da0641,
 
-      -1px 1px 0 #13f1fc
+        -3px -3px 0 #da0641,
 
-    ;
+        -2px -2px 0 #da0641,
 
-  }
+        -1px -1px 0 #da0641
 
-}
+      ;
+
+    }
+
+    100% {
+
+      text-shadow:
+
+        4px -4px 0 #da0641,
+
+        3px -3px 0 #da0641,
+
+        2px -2px 0 #da0641,
+
+        1px -1px 0 #da0641,
+
+        -4px 4px 0 #13f1fc,
+
+        -3px 3px 0 #13f1fc,
+
+        -2px 2px 0 #13f1fc,
+
+        -1px 1px 0 #13f1fc
+
+      ;
+
+    }
 
   }

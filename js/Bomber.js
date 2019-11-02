@@ -49,7 +49,7 @@ class Bomber extends Phaser.Scene {
     });
 
     this.bombs.children.iterate(function (child) {
-      child.body.velocity.setTo(200, 200);
+      child.body.velocity.setTo(250, 250);
       child.body.collideWorldBounds = true;
       child.body.bounce.set(1);
       child.body.gravity.set(0, 180);
@@ -147,6 +147,7 @@ class Bomber extends Phaser.Scene {
 
   collectStar (player, star) {
    star.disableBody(true, true);
+   this.scene.start('win')
 
     //concatenacion de del score con los puntos sumados
     this.score += 10;

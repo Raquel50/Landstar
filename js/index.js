@@ -11,7 +11,7 @@ const config = {
       debug: false
     }
   },
-  scene: [MainMenu, Bomber, GameOver],
+  scene: [MainMenu, Bomber, GameOver, Win],
   type: Phaser.AUTO,
   width: 800
 };
