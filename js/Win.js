@@ -1,4 +1,4 @@
-class Diamond extends Phaser.Scene {
+class Win extends Phaser.Scene {
   constructor() {
     super({ key: 'Win' });
 

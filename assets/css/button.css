@@ -135,7 +135,7 @@
 
     font: normal 140px Varela Round, sans-serif;
 
-    height: 140px;
+    height: 180px;
 
     left: 0;
 
@@ -149,7 +149,7 @@
 
     animation: move linear 2000ms infinite;
 
-    z-index: 6
+    z-index:
 
   }
 
