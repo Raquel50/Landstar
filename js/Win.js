@@ -15,6 +15,6 @@ class Win extends Phaser.Scene {
       const h1 = this.add.dom(400, 200, 'h1', null, 'CONGRATULATION');
       h1.setClassName('win');
       h1.setClassName('animated-shadow');
-
+      
     }
   }

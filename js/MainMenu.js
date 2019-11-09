@@ -7,12 +7,15 @@ class MainMenu extends Phaser.Scene {
     this.load.css('landstar', 'assets/css/button.css');
     // this.load.image('play-button', 'assets/button.png');
     this.load.css('animated-shadow', 'assets/css/button.css');
-
-
+    // this.load.image('dude', 'assets/dude3.png');
+    // this.load.image('star', 'assets/star.png');
   }
 
   create() {
     const self = this;
+
+    // const dude3 = this.add.image(700, 80, 'dude');
+    // const star = this.add.image(550, 80, 'star');
 
     this.cameras.main.setBackgroundColor('#009432');
 

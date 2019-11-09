@@ -5,7 +5,6 @@ class GameOver extends Phaser.Scene {
 
   preload () {
     this.load.css('landstar', 'assets/css/landstar.css');
-    // this.load.image('GameOver-button', 'assets/button.png');
   }
 
   create() {
