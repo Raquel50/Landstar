@@ -13,7 +13,7 @@ class GameOver extends Phaser.Scene {
 
     this.cameras.main.setBackgroundColor('#009432');
 
-    const h1 = this.add.dom(400, 200, 'h1', null, 'GAME OVER');
+    const h1 = this.add.dom(400, 80, 'h1', null, 'LOSER');
     h1.setClassName('gameover');
     h1.setClassName('animated-shadow');
 

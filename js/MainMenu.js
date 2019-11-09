@@ -8,6 +8,7 @@ class MainMenu extends Phaser.Scene {
     // this.load.image('play-button', 'assets/button.png');
     this.load.css('animated-shadow', 'assets/css/button.css');
 
+
   }
 
   create() {
